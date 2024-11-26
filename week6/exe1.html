@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W6 Exe 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        #nav {
+        padding: 5px;
+        }
+
+        a {
+        text-decoration: none;
+        color: white;
+        }
+
+        header {
+        padding: 15px;
+        background-color: #bcbcbc;
+        display: flex;
+        align-items: center
+        }
+
+        .logo {
+        display: flex;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 50px;
+        margin-left: 0px;
+        }
+
+        .info {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        position: relative;
+        }
+
+        .icon-container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        }
+
+
+        .icon {
+        align-items: center;
+        height: 15px;
+        }
+
+        .services-container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        }
+
+        .contact {
+        margin-right: 20px;
+        }
+
+        .menu-svc {
+        position: relative;
+        }
+
+        .menu-abt {
+        position: relative;
+        }
+
+        .submenu {
+        font-size: 15px;
+        display: none;
+        position: absolute;
+        background-color: #939292;
+        color: rgb(0, 0, 0);
+        min-width: 200px;
+        z-index: 1;
+        top: 100%;
+        left: 0;
+        box-sizing: border-box;
+        }
+
+        .submenu a {
+        min-height: 25px;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding: 5px 10px;
+        color: rgb(0, 0, 0);
+        }
+
+        .submenu a:hover {
+        background-color: #8f8f8f;
+        }
+
+        .menu-abt:hover .submenu {
+        display: block;
+        }
+
+        .menu-svc:hover .submenu {
+        display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    <div id="logo">Logo</div>
+    <div id="nav">
+    </div>
+
+    <div class="info">
+   
+    <a href="#">Home</a>
+
+    <div class="menu-abt">
+    <div class="icon-container">
+    <a href="#">About</a>
+    </div>
+    <div class="submenu">
+    <a href="#">Mission</a>
+    <a href="#">Vision</a>
+    </div>
+    </div>
+
+    <div class="menu-svc">
+    <div class="icon-container">
+    <a href="#">Services</a>
+    </div>
+    <div class="submenu">
+    <a href="#">Web Development</a>
+    <a href="#">App Development</a>
+    <a href="#">SEO Services</a>
+    </div>
+    </div>
+
+    <a href="#" class="contact">Contact</a>
+
+    </div>
+    </header>
+
+</body>
+
+</html>
